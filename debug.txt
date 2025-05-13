@@ -1,0 +1,1069 @@
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp: In member function ‘glm::vec3 Dielectric::refract(const vec3&, const vec3&, double)’:
+../DielectricMaterial.hpp:121:98: error: no match for ‘operator*’ (operand types are ‘double’ and ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’})
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+      |                                    |                                                               |
+      |                                    double                                                          const vec3 {aka const glm::tvec3<float, glm::highp>}
+In file included from ../../shared/include/glm/detail/type_vec2.hpp:404,
+                 from ../../shared/include/glm/vec2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:97,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec2.inl:574:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec2<T, P> glm::operator*(const glm::tvec2<T, P>&, const T&)’
+  574 |         GLM_FUNC_QUALIFIER tvec2<T, P> operator*(tvec2<T, P> const & v1, T const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec2.inl:574:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec2.hpp:404,
+                 from ../../shared/include/glm/vec2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:97,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec2.inl:582:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec2<T, P> glm::operator*(const glm::tvec2<T, P>&, const glm::tvec1<T, P>&)’
+  582 |         GLM_FUNC_QUALIFIER tvec2<T, P> operator*(tvec2<T, P> const & v1, tvec1<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec2.inl:582:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec2.hpp:404,
+                 from ../../shared/include/glm/vec2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:97,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec2.inl:590:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec2<T, P> glm::operator*(const T&, const glm::tvec2<T, P>&)’
+  590 |         GLM_FUNC_QUALIFIER tvec2<T, P> operator*(T const & scalar, tvec2<T, P> const & v)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec2.inl:590:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tvec2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec2.hpp:404,
+                 from ../../shared/include/glm/vec2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:97,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec2.inl:598:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec2<T, P> glm::operator*(const glm::tvec1<T, P>&, const glm::tvec2<T, P>&)’
+  598 |         GLM_FUNC_QUALIFIER tvec2<T, P> operator*(tvec1<T, P> const & v1, tvec2<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec2.inl:598:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec1<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec2.hpp:404,
+                 from ../../shared/include/glm/vec2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:97,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec2.inl:606:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec2<T, P> glm::operator*(const glm::tvec2<T, P>&, const glm::tvec2<T, P>&)’
+  606 |         GLM_FUNC_QUALIFIER tvec2<T, P> operator*(tvec2<T, P> const & v1, tvec2<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec2.inl:606:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec3.hpp:423,
+                 from ../../shared/include/glm/vec3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:98,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec3.inl:652:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec3<T, P> glm::operator*(const glm::tvec3<T, P>&, const T&)’
+  652 |         GLM_FUNC_QUALIFIER tvec3<T, P> operator*(tvec3<T, P> const & v, T const & scalar)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec3.inl:652:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec3.hpp:423,
+                 from ../../shared/include/glm/vec3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:98,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec3.inl:661:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec3<T, P> glm::operator*(const glm::tvec3<T, P>&, const glm::tvec1<T, P>&)’
+  661 |         GLM_FUNC_QUALIFIER tvec3<T, P> operator*(tvec3<T, P> const & v, tvec1<T, P> const & scalar)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec3.inl:661:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec3.hpp:423,
+                 from ../../shared/include/glm/vec3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:98,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec3.inl:670:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec3<T, P> glm::operator*(const T&, const glm::tvec3<T, P>&)’
+  670 |         GLM_FUNC_QUALIFIER tvec3<T, P> operator*(T const & scalar, tvec3<T, P> const & v)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec3.inl:670:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   deduced conflicting types for parameter ‘T’ (‘double’ and ‘float’)
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec3.hpp:423,
+                 from ../../shared/include/glm/vec3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:98,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec3.inl:679:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec3<T, P> glm::operator*(const glm::tvec1<T, P>&, const glm::tvec3<T, P>&)’
+  679 |         GLM_FUNC_QUALIFIER tvec3<T, P> operator*(tvec1<T, P> const & scalar, tvec3<T, P> const & v)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec3.inl:679:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec1<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec3.hpp:423,
+                 from ../../shared/include/glm/vec3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:98,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec3.inl:688:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec3<T, P> glm::operator*(const glm::tvec3<T, P>&, const glm::tvec3<T, P>&)’
+  688 |         GLM_FUNC_QUALIFIER tvec3<T, P> operator*(tvec3<T, P> const & v1, tvec3<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec3.inl:688:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec4.hpp:528,
+                 from ../../shared/include/glm/vec4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:99,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec4.inl:721:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec4<T, P> glm::operator*(const glm::tvec4<T, P>&, T)’
+  721 |         GLM_FUNC_QUALIFIER tvec4<T, P> operator*(tvec4<T, P> const & v, T scalar)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec4.inl:721:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/vec4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:99,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec4.hpp:393:35: note: candidate: ‘template<class T, glm::precision P> glm::tvec4<T, P> glm::operator*(const glm::tvec4<T, P>&, const glm::tvec1<T, P>&)’
+  393 |         GLM_FUNC_DECL tvec4<T, P> operator*(tvec4<T, P> const & v, tvec1<T, P> const & scalar);
+      |                                   ^~~~~~~~
+../../shared/include/glm/detail/type_vec4.hpp:393:35: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec4.hpp:528,
+                 from ../../shared/include/glm/vec4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:99,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec4.inl:731:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec4<T, P> glm::operator*(T, const glm::tvec4<T, P>&)’
+  731 |         GLM_FUNC_QUALIFIER tvec4<T, P> operator*(T scalar, tvec4<T, P> const & v)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec4.inl:731:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tvec4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/vec4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:99,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec4.hpp:399:35: note: candidate: ‘template<class T, glm::precision P> glm::tvec4<T, P> glm::operator*(const glm::tvec1<T, P>&, const glm::tvec4<T, P>&)’
+  399 |         GLM_FUNC_DECL tvec4<T, P> operator*(tvec1<T, P> const & scalar, tvec4<T, P> const & v);
+      |                                   ^~~~~~~~
+../../shared/include/glm/detail/type_vec4.hpp:399:35: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec1<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec4.hpp:528,
+                 from ../../shared/include/glm/vec4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:99,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec4.inl:741:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec4<T, P> glm::operator*(const glm::tvec4<T, P>&, const glm::tvec4<T, P>&)’
+  741 |         GLM_FUNC_QUALIFIER tvec4<T, P> operator*(tvec4<T, P> const & v1, tvec4<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec4.inl:741:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:428:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x2<T, P> glm::operator*(const glm::tmat2x2<T, P>&, const T&)’
+  428 |         GLM_FUNC_QUALIFIER tmat2x2<T, P> operator*(tmat2x2<T, P> const & m,     T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:428:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:436:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x2<T, P> glm::operator*(const T&, const glm::tmat2x2<T, P>&)’
+  436 |         GLM_FUNC_QUALIFIER tmat2x2<T, P> operator*(T const & s, tmat2x2<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:436:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:444:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x2<T, P>::col_type glm::operator*(const glm::tmat2x2<T, P>&, const typename glm::tmat2x2<T, P>::row_type&)’
+  444 |         GLM_FUNC_QUALIFIER typename tmat2x2<T, P>::col_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:444:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:456:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x2<T, P>::row_type glm::operator*(const typename glm::tmat2x2<T, P>::col_type&, const glm::tmat2x2<T, P>&)’
+  456 |         GLM_FUNC_QUALIFIER typename tmat2x2<T, P>::row_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:456:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:468:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x2<T, P> glm::operator*(const glm::tmat2x2<T, P>&, const glm::tmat2x2<T, P>&)’
+  468 |         GLM_FUNC_QUALIFIER tmat2x2<T, P> operator*(tmat2x2<T, P> const & m1, tmat2x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:468:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:478:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x2<T, P> glm::operator*(const glm::tmat2x2<T, P>&, const glm::tmat3x2<T, P>&)’
+  478 |         GLM_FUNC_QUALIFIER tmat3x2<T, P> operator*(tmat2x2<T, P> const & m1, tmat3x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:478:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x2.hpp:228,
+                 from ../../shared/include/glm/mat2x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:100,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x2.inl:490:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x2<T, P> glm::operator*(const glm::tmat2x2<T, P>&, const glm::tmat4x2<T, P>&)’
+  490 |         GLM_FUNC_QUALIFIER tmat4x2<T, P> operator*(tmat2x2<T, P> const & m1, tmat4x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x2.inl:490:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:382:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x3<T, P> glm::operator*(const glm::tmat2x3<T, P>&, const T&)’
+  382 |         GLM_FUNC_QUALIFIER tmat2x3<T, P> operator*(tmat2x3<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:382:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:390:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x3<T, P> glm::operator*(const T&, const glm::tmat2x3<T, P>&)’
+  390 |         GLM_FUNC_QUALIFIER tmat2x3<T, P> operator*(T const & s, tmat2x3<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:390:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:398:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x3<T, P>::col_type glm::operator*(const glm::tmat2x3<T, P>&, const typename glm::tmat2x3<T, P>::row_type&)’
+  398 |         GLM_FUNC_QUALIFIER typename tmat2x3<T, P>::col_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:398:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:410:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x3<T, P>::row_type glm::operator*(const typename glm::tmat2x3<T, P>::col_type&, const glm::tmat2x3<T, P>&)’
+  410 |         GLM_FUNC_QUALIFIER typename tmat2x3<T, P>::row_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:410:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:421:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x3<T, P> glm::operator*(const glm::tmat2x3<T, P>&, const glm::tmat2x2<T, P>&)’
+  421 |         GLM_FUNC_QUALIFIER tmat2x3<T, P> operator*(tmat2x3<T, P> const & m1, tmat2x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:421:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:433:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x3<T, P> glm::operator*(const glm::tmat2x3<T, P>&, const glm::tmat3x2<T, P>&)’
+  433 |         GLM_FUNC_QUALIFIER tmat3x3<T, P> operator*(tmat2x3<T, P> const & m1, tmat3x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:433:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x3.hpp:205,
+                 from ../../shared/include/glm/mat2x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:101,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x3.inl:463:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x3<T, P> glm::operator*(const glm::tmat2x3<T, P>&, const glm::tmat4x2<T, P>&)’
+  463 |         GLM_FUNC_QUALIFIER tmat4x3<T, P> operator*(tmat2x3<T, P> const & m1, tmat4x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x3.inl:463:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:383:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x4<T, P> glm::operator*(const glm::tmat2x4<T, P>&, const T&)’
+  383 |         GLM_FUNC_QUALIFIER tmat2x4<T, P> operator*(tmat2x4<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:383:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:391:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x4<T, P> glm::operator*(const T&, const glm::tmat2x4<T, P>&)’
+  391 |         GLM_FUNC_QUALIFIER tmat2x4<T, P> operator*(T const & s, tmat2x4<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:391:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:399:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x4<T, P>::col_type glm::operator*(const glm::tmat2x4<T, P>&, const typename glm::tmat2x4<T, P>::row_type&)’
+  399 |         GLM_FUNC_QUALIFIER typename tmat2x4<T, P>::col_type operator*(tmat2x4<T, P> const & m, typename tmat2x4<T, P>::row_type const & v)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:399:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:409:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat2x4<T, P>::row_type glm::operator*(const typename glm::tmat2x4<T, P>::col_type&, const glm::tmat2x4<T, P>&)’
+  409 |         GLM_FUNC_QUALIFIER typename tmat2x4<T, P>::row_type operator*(typename tmat2x4<T, P>::col_type const & v, tmat2x4<T, P> const & m)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:409:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat2x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:417:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x4<T, P> glm::operator*(const glm::tmat2x4<T, P>&, const glm::tmat4x2<T, P>&)’
+  417 |         GLM_FUNC_QUALIFIER tmat4x4<T, P> operator*(tmat2x4<T, P> const & m1, tmat4x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:417:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:458:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x4<T, P> glm::operator*(const glm::tmat2x4<T, P>&, const glm::tmat2x2<T, P>&)’
+  458 |         GLM_FUNC_QUALIFIER tmat2x4<T, P> operator*(tmat2x4<T, P> const & m1, tmat2x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:458:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat2x4.hpp:207,
+                 from ../../shared/include/glm/mat2x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:102,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat2x4.inl:472:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x4<T, P> glm::operator*(const glm::tmat2x4<T, P>&, const glm::tmat3x2<T, P>&)’
+  472 |         GLM_FUNC_QUALIFIER tmat3x4<T, P> operator*(tmat2x4<T, P> const & m1, tmat3x2<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat2x4.inl:472:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat2x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:427:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x2<T, P> glm::operator*(const glm::tmat3x2<T, P>&, const T&)’
+  427 |         GLM_FUNC_QUALIFIER tmat3x2<T, P> operator*(tmat3x2<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:427:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:436:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x2<T, P> glm::operator*(const T&, const glm::tmat3x2<T, P>&)’
+  436 |         GLM_FUNC_QUALIFIER tmat3x2<T, P> operator*(T const & s, tmat3x2<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:436:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:445:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x2<T, P>::col_type glm::operator*(const glm::tmat3x2<T, P>&, const typename glm::tmat3x2<T, P>::row_type&)’
+  445 |         GLM_FUNC_QUALIFIER typename tmat3x2<T, P>::col_type operator*(tmat3x2<T, P> const & m, typename tmat3x2<T, P>::row_type const & v)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:445:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:453:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x2<T, P>::row_type glm::operator*(const typename glm::tmat3x2<T, P>::col_type&, const glm::tmat3x2<T, P>&)’
+  453 |         GLM_FUNC_QUALIFIER typename tmat3x2<T, P>::row_type operator*(typename tmat3x2<T, P>::col_type const & v, tmat3x2<T, P> const & m)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:453:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:462:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x2<T, P> glm::operator*(const glm::tmat3x2<T, P>&, const glm::tmat2x3<T, P>&)’
+  462 |         GLM_FUNC_QUALIFIER tmat2x2<T, P> operator*(tmat3x2<T, P> const & m1, tmat2x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:462:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:487:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x2<T, P> glm::operator*(const glm::tmat3x2<T, P>&, const glm::tmat3x3<T, P>&)’
+  487 |         GLM_FUNC_QUALIFIER tmat3x2<T, P> operator*(tmat3x2<T, P> const & m1, tmat3x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:487:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x2.hpp:212,
+                 from ../../shared/include/glm/mat3x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:103,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x2.inl:499:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x2<T, P> glm::operator*(const glm::tmat3x2<T, P>&, const glm::tmat4x3<T, P>&)’
+  499 |         GLM_FUNC_QUALIFIER tmat4x2<T, P> operator*(tmat3x2<T, P> const & m1, tmat4x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x2.inl:499:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:483:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x3<T, P> glm::operator*(const glm::tmat3x3<T, P>&, const T&)’
+  483 |         GLM_FUNC_QUALIFIER tmat3x3<T, P> operator*(tmat3x3<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:483:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:492:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x3<T, P> glm::operator*(const T&, const glm::tmat3x3<T, P>&)’
+  492 |         GLM_FUNC_QUALIFIER tmat3x3<T, P> operator*(T const & s, tmat3x3<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:492:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:501:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x3<T, P>::col_type glm::operator*(const glm::tmat3x3<T, P>&, const typename glm::tmat3x3<T, P>::row_type&)’
+  501 |         GLM_FUNC_QUALIFIER typename tmat3x3<T, P>::col_type operator*(tmat3x3<T, P> const & m, typename tmat3x3<T, P>::row_type const & v)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:501:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:510:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x3<T, P>::row_type glm::operator*(const typename glm::tmat3x3<T, P>::col_type&, const glm::tmat3x3<T, P>&)’
+  510 |         GLM_FUNC_QUALIFIER typename tmat3x3<T, P>::row_type operator*(typename tmat3x3<T, P>::col_type const & v, tmat3x3<T, P> const & m)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:510:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:519:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x3<T, P> glm::operator*(const glm::tmat3x3<T, P>&, const glm::tmat3x3<T, P>&)’
+  519 |         GLM_FUNC_QUALIFIER tmat3x3<T, P> operator*(tmat3x3<T, P> const & m1, tmat3x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:519:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:555:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x3<T, P> glm::operator*(const glm::tmat3x3<T, P>&, const glm::tmat2x3<T, P>&)’
+  555 |         GLM_FUNC_QUALIFIER tmat2x3<T, P> operator*(tmat3x3<T, P> const & m1, tmat2x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:555:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x3.hpp:235,
+                 from ../../shared/include/glm/mat3x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:104,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x3.inl:567:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x3<T, P> glm::operator*(const glm::tmat3x3<T, P>&, const glm::tmat4x3<T, P>&)’
+  567 |         GLM_FUNC_QUALIFIER tmat4x3<T, P> operator*(tmat3x3<T, P> const & m1, tmat4x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x3.inl:567:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:427:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x4<T, P> glm::operator*(const glm::tmat3x4<T, P>&, const T&)’
+  427 |         GLM_FUNC_QUALIFIER tmat3x4<T, P> operator*(tmat3x4<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:427:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:436:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x4<T, P> glm::operator*(const T&, const glm::tmat3x4<T, P>&)’
+  436 |         GLM_FUNC_QUALIFIER tmat3x4<T, P> operator*(T const & s, tmat3x4<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:436:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:445:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x4<T, P>::col_type glm::operator*(const glm::tmat3x4<T, P>&, const typename glm::tmat3x4<T, P>::row_type&)’
+  445 |         GLM_FUNC_QUALIFIER typename tmat3x4<T, P>::col_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:445:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:459:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat3x4<T, P>::row_type glm::operator*(const typename glm::tmat3x4<T, P>::col_type&, const glm::tmat3x4<T, P>&)’
+  459 |         GLM_FUNC_QUALIFIER typename tmat3x4<T, P>::row_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:459:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat3x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:472:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x4<T, P> glm::operator*(const glm::tmat3x4<T, P>&, const glm::tmat4x3<T, P>&)’
+  472 |         GLM_FUNC_QUALIFIER tmat4x4<T, P> operator*(tmat3x4<T, P> const & m1, tmat4x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:472:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:521:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x4<T, P> glm::operator*(const glm::tmat3x4<T, P>&, const glm::tmat2x3<T, P>&)’
+  521 |         GLM_FUNC_QUALIFIER tmat2x4<T, P> operator*(tmat3x4<T, P> const & m1, tmat2x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:521:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat3x4.hpp:212,
+                 from ../../shared/include/glm/mat3x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:105,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat3x4.inl:535:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x4<T, P> glm::operator*(const glm::tmat3x4<T, P>&, const glm::tmat3x3<T, P>&)’
+  535 |         GLM_FUNC_QUALIFIER tmat3x4<T, P> operator*(tmat3x4<T, P> const & m1, tmat3x3<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat3x4.inl:535:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat3x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:464:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x2<T, P> glm::operator*(const glm::tmat4x2<T, P>&, const T&)’
+  464 |         GLM_FUNC_QUALIFIER tmat4x2<T, P> operator*(tmat4x2<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:464:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:474:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x2<T, P> glm::operator*(const T&, const glm::tmat4x2<T, P>&)’
+  474 |         GLM_FUNC_QUALIFIER tmat4x2<T, P> operator*(T const & s, tmat4x2<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:474:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:484:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x2<T, P>::col_type glm::operator*(const glm::tmat4x2<T, P>&, const typename glm::tmat4x2<T, P>::row_type&)’
+  484 |         GLM_FUNC_QUALIFIER typename tmat4x2<T, P>::col_type operator*(tmat4x2<T, P> const & m, typename tmat4x2<T, P>::row_type const & v)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:484:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:492:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x2<T, P>::row_type glm::operator*(const typename glm::tmat4x2<T, P>::col_type&, const glm::tmat4x2<T, P>&)’
+  492 |         GLM_FUNC_QUALIFIER typename tmat4x2<T, P>::row_type operator*(typename tmat4x2<T, P>::col_type const & v, tmat4x2<T, P> const & m)
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:492:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x2<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:531:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x2<T, P> glm::operator*(const glm::tmat4x2<T, P>&, const glm::tmat3x4<T, P>&)’
+  531 |         GLM_FUNC_QUALIFIER tmat3x2<T, P> operator*(tmat4x2<T, P> const & m1, tmat3x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:531:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:543:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x2<T, P> glm::operator*(const glm::tmat4x2<T, P>&, const glm::tmat4x4<T, P>&)’
+  543 |         GLM_FUNC_QUALIFIER tmat4x2<T, P> operator*(tmat4x2<T, P> const & m1, tmat4x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:543:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:509:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x3<T, P> glm::operator*(const glm::tmat4x3<T, P>&, const glm::tmat2x4<T, P>&)’
+  509 |         GLM_FUNC_QUALIFIER tmat2x3<T, P> operator*(tmat4x3<T, P> const & m1, tmat2x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:509:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x2.hpp:217,
+                 from ../../shared/include/glm/mat4x2.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:106,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x2.inl:502:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x2<T, P> glm::operator*(const glm::tmat4x2<T, P>&, const glm::tmat2x4<T, P>&)’
+  502 |         GLM_FUNC_QUALIFIER tmat2x2<T, P> operator*(tmat4x2<T, P> const & m1, tmat2x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x2.inl:502:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x2<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:464:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x3<T, P> glm::operator*(const glm::tmat4x3<T, P>&, const T&)’
+  464 |         GLM_FUNC_QUALIFIER tmat4x3<T, P> operator*(tmat4x3<T, P> const & m, T const & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:464:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:474:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x3<T, P> glm::operator*(const T&, const glm::tmat4x3<T, P>&)’
+  474 |         GLM_FUNC_QUALIFIER tmat4x3<T, P> operator*(T const & s, tmat4x3<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:474:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:484:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x3<T, P>::col_type glm::operator*(const glm::tmat4x3<T, P>&, const typename glm::tmat4x3<T, P>::row_type&)’
+  484 |         GLM_FUNC_QUALIFIER typename tmat4x3<T, P>::col_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:484:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:496:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x3<T, P>::row_type glm::operator*(const typename glm::tmat4x3<T, P>::col_type&, const glm::tmat4x3<T, P>&)’
+  496 |         GLM_FUNC_QUALIFIER typename tmat4x3<T, P>::row_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:496:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x3<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:521:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x3<T, P> glm::operator*(const glm::tmat4x3<T, P>&, const glm::tmat3x4<T, P>&)’
+  521 |         GLM_FUNC_QUALIFIER tmat3x3<T, P> operator*(tmat4x3<T, P> const & m1, tmat3x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:521:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x3.hpp:217,
+                 from ../../shared/include/glm/mat4x3.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:107,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x3.inl:563:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x3<T, P> glm::operator*(const glm::tmat4x3<T, P>&, const glm::tmat4x4<T, P>&)’
+  563 |         GLM_FUNC_QUALIFIER tmat4x3<T, P> operator*(tmat4x3<T, P> const & m1, tmat4x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x3.inl:563:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x3<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:590:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x4<T, P> glm::operator*(const glm::tmat4x4<T, P>&, const T&)’
+  590 |         GLM_FUNC_QUALIFIER tmat4x4<T, P> operator*(tmat4x4<T, P> const & m, T const  & s)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:590:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:600:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x4<T, P> glm::operator*(const T&, const glm::tmat4x4<T, P>&)’
+  600 |         GLM_FUNC_QUALIFIER tmat4x4<T, P> operator*(T const & s, tmat4x4<T, P> const & m)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:600:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:610:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x4<T, P>::col_type glm::operator*(const glm::tmat4x4<T, P>&, const typename glm::tmat4x4<T, P>::row_type&)’
+  610 |         GLM_FUNC_QUALIFIER typename tmat4x4<T, P>::col_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:610:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:658:61: note: candidate: ‘template<class T, glm::precision P> typename glm::tmat4x4<T, P>::row_type glm::operator*(const typename glm::tmat4x4<T, P>::col_type&, const glm::tmat4x4<T, P>&)’
+  658 |         GLM_FUNC_QUALIFIER typename tmat4x4<T, P>::row_type operator*
+      |                                                             ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:658:61: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tmat4x4<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:672:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat2x4<T, P> glm::operator*(const glm::tmat4x4<T, P>&, const glm::tmat2x4<T, P>&)’
+  672 |         GLM_FUNC_QUALIFIER tmat2x4<T, P> operator*(tmat4x4<T, P> const & m1, tmat2x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:672:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:686:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat3x4<T, P> glm::operator*(const glm::tmat4x4<T, P>&, const glm::tmat3x4<T, P>&)’
+  686 |         GLM_FUNC_QUALIFIER tmat3x4<T, P> operator*(tmat4x4<T, P> const & m1, tmat3x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:686:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_mat4x4.hpp:240,
+                 from ../../shared/include/glm/mat4x4.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:108,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_mat4x4.inl:704:42: note: candidate: ‘template<class T, glm::precision P> glm::tmat4x4<T, P> glm::operator*(const glm::tmat4x4<T, P>&, const glm::tmat4x4<T, P>&)’
+  704 |         GLM_FUNC_QUALIFIER tmat4x4<T, P> operator*(tmat4x4<T, P> const & m1, tmat4x4<T, P> const & m2)
+      |                                          ^~~~~~~~
+../../shared/include/glm/detail/type_mat4x4.inl:704:42: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tmat4x4<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec1.hpp:315,
+                 from ../../shared/include/glm/detail/_vectorize.hpp:35,
+                 from ../../shared/include/glm/detail/func_trigonometric.inl:33,
+                 from ../../shared/include/glm/detail/func_trigonometric.hpp:205,
+                 from ../../shared/include/glm/trigonometric.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:110,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec1.inl:408:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec1<T, P> glm::operator*(const glm::tvec1<T, P>&, const T&)’
+  408 |         GLM_FUNC_QUALIFIER tvec1<T, P> operator*(tvec1<T, P> const & v, T const & scalar)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec1.inl:408:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec1<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec1.hpp:315,
+                 from ../../shared/include/glm/detail/_vectorize.hpp:35,
+                 from ../../shared/include/glm/detail/func_trigonometric.inl:33,
+                 from ../../shared/include/glm/detail/func_trigonometric.hpp:205,
+                 from ../../shared/include/glm/trigonometric.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:110,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec1.inl:415:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec1<T, P> glm::operator*(const T&, const glm::tvec1<T, P>&)’
+  415 |         GLM_FUNC_QUALIFIER tvec1<T, P> operator*(T const & scalar, tvec1<T, P> const & v)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec1.inl:415:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   ‘const vec3’ {aka ‘const glm::tvec3<float, glm::highp>’} is not derived from ‘const glm::tvec1<T, P>’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+In file included from ../../shared/include/glm/detail/type_vec1.hpp:315,
+                 from ../../shared/include/glm/detail/_vectorize.hpp:35,
+                 from ../../shared/include/glm/detail/func_trigonometric.inl:33,
+                 from ../../shared/include/glm/detail/func_trigonometric.hpp:205,
+                 from ../../shared/include/glm/trigonometric.hpp:35,
+                 from ../../shared/include/glm/glm.hpp:110,
+                 from ../Light.hpp:7,
+                 from ../scene_lua.cpp:51:
+../../shared/include/glm/detail/type_vec1.inl:422:40: note: candidate: ‘template<class T, glm::precision P> glm::tvec1<T, P> glm::operator*(const glm::tvec1<T, P>&, const glm::tvec1<T, P>&)’
+  422 |         GLM_FUNC_QUALIFIER tvec1<T, P> operator*(tvec1<T, P> const & v1, tvec1<T, P> const & v2)
+      |                                        ^~~~~~~~
+../../shared/include/glm/detail/type_vec1.inl:422:40: note:   template argument deduction/substitution failed:
+In file included from ../scene_lua.cpp:64:
+../DielectricMaterial.hpp:121:100: note:   mismatched types ‘const glm::tvec1<T, P>’ and ‘double’
+  121 |         glm::vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - glm::dot(r_out_perp, r_out_perp))) * n;
+      |                                                                                                    ^
+make[1]: *** [Makefile:173: Debug/scene_lua.o] Error 1
+make: *** [Makefile:17: A4] Error 2
